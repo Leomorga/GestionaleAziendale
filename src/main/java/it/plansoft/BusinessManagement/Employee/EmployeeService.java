@@ -40,4 +40,34 @@ public class EmployeeService {
 	public void deleteEmployee(String id) {
 		//employeeRepository.deleteById(id);
 	}
+
+	public double getSalary(Long id) {
+		
+		return 0;
+	}
+
+	public void promote(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void changePosition(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void changeSalary(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void changeDailyHours(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setActualHours(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		
+	}
 }
