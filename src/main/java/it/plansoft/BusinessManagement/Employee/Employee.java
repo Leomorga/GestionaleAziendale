@@ -3,6 +3,9 @@ package it.plansoft.BusinessManagement.Employee;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import it.plansoft.BusinessManagement.payroll.PayRoll;
+import it.plansoft.BusinessManagement.timebank.TimeBank;
+
 @Entity
 public class Employee {
 
