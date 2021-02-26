@@ -10,15 +10,20 @@ public class Employee {
 	private String name;
 	private String lastName;
 	private String position;
+	private TimeBank timeBank;
+	private PayRoll payRoll;
 
 	public Employee() {
 	}
 
-	public Employee(Long id, String name, String lastName, String position) {
+	public Employee(Long id, String name, String lastName, String position, TimeBank timeBank, PayRoll payRoll) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.lastName = lastName;
 		this.position = position;
+		this.timeBank = timeBank;
+		this.payRoll = payRoll;
 	}
 
 	public Long getId() {
@@ -52,4 +57,21 @@ public class Employee {
 	public void setPosition(String position) {
 		this.position = position;
 	}
+
+	public TimeBank getTimeBank() {
+		return timeBank;
+	}
+
+	public void setTimeBank(TimeBank timeBank) {
+		this.timeBank = timeBank;
+	}
+
+	public PayRoll getPayRoll() {
+		return payRoll;
+	}
+
+	public void setPayRoll(PayRoll payRoll) {
+		this.payRoll = payRoll;
+	}
+
 }
