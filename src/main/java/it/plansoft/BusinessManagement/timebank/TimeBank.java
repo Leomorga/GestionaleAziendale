@@ -1,7 +1,12 @@
 package it.plansoft.BusinessManagement.timebank;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class TimeBank {
 
+	private @Id Long id;
 	private int dailyHours;
 	private int actualHours;
 

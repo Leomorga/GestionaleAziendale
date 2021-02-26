@@ -2,6 +2,7 @@ package it.plansoft.BusinessManagement.Employee;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 import it.plansoft.BusinessManagement.payroll.PayRoll;
 import it.plansoft.BusinessManagement.timebank.TimeBank;
@@ -13,7 +14,9 @@ public class Employee {
 	private String name;
 	private String lastName;
 	private String position;
+	@OneToOne
 	private TimeBank timeBank;
+	@OneToOne
 	private PayRoll payRoll;
 
 	public Employee() {

@@ -1,7 +1,12 @@
 package it.plansoft.BusinessManagement.payroll;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class PayRoll {
 
+	private @Id Long id;
 	private double salary;
 	private int promotions;
 
